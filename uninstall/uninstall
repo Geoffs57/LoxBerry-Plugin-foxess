@@ -1,0 +1,11 @@
+#/bin/sh
+
+#apt -y purge foxesscloud
+#apt -y purge matplotlib
+apt -y autoremove
+
+pip3 uninstall --user foxesscloud
+pip3 uninstall --user matplotlib
+
+# Exit with Status 0
+exit 0
